@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+<body>
+    
+    <!-- ID Attribute to uniquely identify this paragraph element -->
+    <p id="favWebSite">A link to my favorite website.</p>
+
+    <form>
+        <!-- The disabled boolean attribute with value -->
+        <input type="text" disabled="disabled">
+        <!-- The disabled boolean attribute without value -->
+        <input type="text" disabled>
+    </form>
+
+    <!-- Attributes - Quote Style - Accepted -->
+    <a href="https://www.example.com">A link to my example.</a>
+    <a href='https://www.example.com'>A link to my example.</a>
+
+    <!-- Breaks the markup - Uncomment to Check -->
+    <!-- <a href="https://www.example.com'>A link to my example.</a> -->
+
+    <!-- Escaping - Accepted -->
+    <a href="https://www.example.com" title="Isn't this fun?">A link to my example.</a>
+    <!-- Escaping - Breaks markup with same Quote Style -->
+    <!-- The title attribute has a valid title, however, the others are treated as boolean attributes -->
+    <!-- <a href='https://www.example.com' title='Isn't this fun?'>A link to my example.</a> -->
+
+    <!-- HTML Entities to preserve markup -->
+    <a href='https://www.example.com' title='Isn&apos;t this fun?'>A link to my example.</a>
+        
+</body>
+</html>
